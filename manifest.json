@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "#TravelSafe",
+    "description": "This extension displays city crime information for Airbnb listings",
+    "version": "1.0",
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.airbnb.com/rooms/*"
+            ],
+            "js": ["jquery-3.1.0.min.js","page.js"]
+        }
+    ],
+    "page_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "web_accessible_resources": [
+        "data/*"
+    ]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>#TravelSafe</title>
+</head>
+<body>
+    <div class="standard">
+        <nav>
+            <a>#TravelSafe</a>
+        </nav>
+        <div>
+            <h5 id="location"></h5>
+            <p><span id="crime-error"></span></p>
+            <div id="crime-data">
+                <h6>Crime Data for <span id="citystate"></span> in <span id="year"></span></h6>
+                <p>All crime rates based on per 100,000 people</p>
+                <ul>
+                    <li>Population: <span id="population"></span></li>
+                    <li>Violent Crime: <span id="violent_crimerate"></span></li>
+                    <li>Murder: <span id="murder"></span></li>
+                    <li>Larceny: <span id="larceny"></span></li>
+                    <li>Property Crime: <span id="property"></span></li>
+                    <li>Rape: <span id="rape"></span></li>
+                    <li>Vehicular Crime: <span id="vehicular"></span></li>
+                    <li>Burglary: <span id="burglary"></span></li>
+                    <li>Robbery: <span id="robbery"></span></li>
+                    <li>Assault: <span id="assault"></span></li>
+                </ul>
+                <p>Data provided by the FBI Crime Dataset.</p>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="popup.js" type="text/javascript"></script>
+</body>
+</html>
