@@ -11,7 +11,8 @@ chrome.runtime.onMessage.addListener(
         // Validate the message structure
         if( request.message === "popup" ) {
             // A content script is able to read the HTML/source of the current tab it's active on
-            var location = $("#display-address").children("a").text();
+            var location = $("a[href='#neighborhood']").children("span").children("span").text();
+            console.log(location)
             var city = location.split(',')[0];
             var state = location.split(',')[1].trim();
             // sendResponse is a call back function that is executed after this message listener actually activates
